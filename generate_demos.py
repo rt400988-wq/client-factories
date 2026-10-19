@@ -7,8 +7,8 @@ LEADS_DATA = [
     {"name": "Genesis Fitness Studio", "city": "Pune", "niche": "Premium Gym", "phone": "918240911029", "slug": "genesis-pune"},
     {"name": "Minimum Strength Club", "city": "Bengaluru", "niche": "Powerlifting Gym", "phone": "919324589084", "slug": "minimum-strength-blr"},
     {"name": "Meraki Fitness Studio", "city": "Kolkata", "niche": "Boutique Fitness", "phone": "917066612312", "slug": "meraki-kolkata"},
-    {"name": "Viva Aesthetic Clinic", "city": "Mumbai", "niche": "Skin & Hair Clinic", "phone": "919324589084", "slug": "viva-mumbai"},
-    {"name": "CosmoTree Skin Clinic", "city": "Nagpur", "niche": "Laser & Dermatology", "phone": "917066612312", "slug": "cosmotree-nagpur"},
+    {"name": "Viva Aesthetic Clinic", "city": "Mumbai", "niche": "Skin & Hair Clinic", "phone": "919876543210", "slug": "viva-mumbai"},
+    {"name": "CosmoTree Skin Clinic", "city": "Nagpur", "niche": "Laser & Dermatology", "phone": "919123456789", "slug": "cosmotree-nagpur"},
     {"name": "Dental Hub Advanced", "city": "Pune", "niche": "Dental Clinic", "phone": "919811122334", "slug": "dentalhub-pune"},
     {"name": "Gravity Holistic Fitness", "city": "Chennai", "niche": "Holistic Studio", "phone": "919822233445", "slug": "gravity-chennai"},
     {"name": "Radhika's Balanced Body", "city": "Mumbai", "niche": "Pilates Studio", "phone": "919833344556", "slug": "radhika-pilates"},
@@ -35,6 +35,23 @@ LEADS_DATA = [
     {"name": "SmileCraft Dental", "city": "Jaipur", "niche": "Orthodontics", "phone": "919844455669", "slug": "smilecraft-jaipur"},
     {"name": "Apex Fitness Lab", "city": "Surat", "niche": "Personal Training", "phone": "919855566780", "slug": "apex-surat"}
 ]
+
+REQUIRED_LEAD_FIELDS = ("name", "city", "niche", "phone", "slug")
+UNIQUE_LEAD_FIELDS = ("name", "phone", "slug")
+
+def validate_leads(leads):
+    """Fail fast if lead records are incomplete or share an identity field."""
+    if len(leads) != 30:
+        raise ValueError(f"Expected 30 leads, found {len(leads)}")
+    for index, lead in enumerate(leads):
+        missing = [field for field in REQUIRED_LEAD_FIELDS if not lead.get(field)]
+        if missing:
+            raise ValueError(f"Lead {index} is missing: {', '.join(missing)}")
+    for field in UNIQUE_LEAD_FIELDS:
+        values = [lead[field] for lead in leads]
+        duplicates = sorted({value for value in values if values.count(value) > 1})
+        if duplicates:
+            raise ValueError(f"Duplicate {field} values: {duplicates}")
 
 def build_demo_html(name, city, niche, phone, slug):
     return f"""<!DOCTYPE html>
@@ -184,6 +201,7 @@ def build_dashboard_html(leads):
 """
 
 def main():
+    validate_leads(LEADS_DATA)
     os.makedirs("demos", exist_ok=True)
     for lead in LEADS_DATA:
         folder = os.path.join("demos", lead["slug"])
