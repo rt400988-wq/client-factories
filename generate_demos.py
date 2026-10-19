@@ -189,7 +189,9 @@ def main():
     dashboard_content = build_dashboard_html(LEADS_DATA)
     with open("dashboard.html", "w", encoding="utf-8") as f:
         f.write(dashboard_content)
-    print("Done: dashboard.html + demos/ created.")
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(dashboard_content)
+    print("Done: index.html + dashboard.html + demos/ created.")
 
 if __name__ == "__main__":
     main()
