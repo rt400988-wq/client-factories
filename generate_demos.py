@@ -111,7 +111,8 @@ def build_demo_html(name, city, niche, phone, slug):
 def build_dashboard_html(leads):
     cards_html = ""
     for lead in leads:
-        pitch = f"Hi {lead['name']} Team! Main {lead['city']} ke local businesses ke liye high-converting WhatsApp booking funnels banata hu. Aapke brand ke liye maine ek custom Live Demo ready kiya hai: https://<YOUR-GITHUB-USERNAME>.github.io/<REPO-NAME>/demos/{lead['slug']}/. Ek baar open karke dekhiye—ispe clients bina form bhare seedha aapke WhatsApp par appointment book kar sakte hain. Pasand aaye toh batayiyega!"
+        demo_url = f"https://rt400988-wq.github.io/client-factories/demos/{lead['slug']}/"
+        pitch = f"Hi {lead['name']} Team! Main {lead['city']} ke local businesses ke liye high-converting WhatsApp booking funnels banata hu. Aapke brand ke liye maine ek custom Live Demo ready kiya hai: {demo_url} Ek baar open karke dekhiye—ispe clients bina form bhare seedha aapke WhatsApp par appointment book kar sakte hain. Pasand aaye toh batayiyega!"
         encoded_pitch = urllib.parse.quote(pitch)
         wa_link = f"https://wa.me/{lead['phone']}?text={encoded_pitch}"
         demo_link = f"demos/{lead['slug']}/index.html"
