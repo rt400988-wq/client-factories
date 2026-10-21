@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Striker Dashboard - TOP 100</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel-2: #1f2937;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --primary: #facc15;
+      --green: #10b981;
+      --blue: #3b82f6;
+      --shadow: rgba(15, 23, 42, 0.25);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+      color: var(--text);
+      padding: 32px 20px 60px;
+    }
+
+    .container {
+      max-width: 1260px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 3vw, 3rem);
+      color: var(--primary);
+      letter-spacing: 0.02em;
+    }
+
+    .header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(30, 41, 59, 0.96);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-left: 4px solid var(--primary);
+      border-radius: 14px;
+      padding: 18px 16px 16px;
+      box-shadow: 0 10px 18px var(--shadow);
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+      line-height: 1.4;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.16);
+      color: #bfdbfe;
+      border: 1px solid rgba(96, 165, 250, 0.35);
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 14px;
+      width: 100%;
+      text-align: center;
+      background: var(--green);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 11px 12px;
+      border-radius: 10px;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .btn:hover {
+      background: #059669;
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 18px 12px 40px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Singularity Ops - Striker Dashboard</h1>
+      <p>Target: Top 100 High-Ticket Leads • Generated Dashboard</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div>
+          <h3>JDS Banaras</h3>
+          <p><strong>City:</strong> Varanasi (Rathyatra Crossing)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 99</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=917269055695&text=Namaste%20Management%20%26%20Team%20JDS%20Banaras!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>EduRBS Technology Pvt. Ltd.</h3>
+          <p><strong>City:</strong> Varanasi (Sigra)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 98</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=917239080004&text=Namaste%20Management%20%26%20Team%20EduRBS%20Technology%20Pvt.%20Ltd.!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Om Vilas Benares - Luxury Hotel Resort</h3>
+          <p><strong>City:</strong> Varanasi (Christ Nagar)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 98</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=915423500600&text=Namaste%20Management%20%26%20Team%20Om%20Vilas%20Benares%20-%20Luxury%20Hotel%20Resort!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>ALBELI</h3>
+          <p><strong>City:</strong> Varanasi (Sigra)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 98</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919988744277&text=Namaste%20Management%20%26%20Team%20ALBELI!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Meridian IVF - Top Fertility & IVF Centre In Varanasi</h3>
+          <p><strong>City:</strong> Varanasi (Ashapur)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 97</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919628467777&text=Namaste%20Management%20%26%20Team%20Meridian%20IVF%20-%20Top%20Fertility%20%26%20IVF%20Centre%20In%20Varanasi!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Hira Pottery</h3>
+          <p><strong>City:</strong> Mirzapur (Chunar)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 96</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919517441711&text=Namaste%20Management%20%26%20Team%20Hira%20Pottery!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Advocate Mukesh Chaurasia</h3>
+          <p><strong>City:</strong> Varanasi (Central Bar)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 96</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919889267466&text=Namaste%20Management%20%26%20Team%20Advocate%20Mukesh%20Chaurasia!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Shri Khatu Ji Wholesale Bazar Banaras</h3>
+          <p><strong>City:</strong> Varanasi (Maldahiya)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 96</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=918299247566&text=Namaste%20Management%20%26%20Team%20Shri%20Khatu%20Ji%20Wholesale%20Bazar%20Banaras!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Hair Farmer's</h3>
+          <p><strong>City:</strong> Gorakhpur (Bank Rd)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 96</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919453120087&text=Namaste%20Management%20%26%20Team%20Hair%20Farmer's!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Sharda Narayan Health Care Pvt. Ltd.</h3>
+          <p><strong>City:</strong> Mau, UP</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 96</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919454868686&text=Namaste%20Management%20%26%20Team%20Sharda%20Narayan%20Health%20Care%20Pvt.%20Ltd.!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Ayodhya Property - Land Plot Builders Construction</h3>
+          <p><strong>City:</strong> Ayodhya / Purvanchal Corridor</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 95</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=918188818875&text=Namaste%20Management%20%26%20Team%20Ayodhya%20Property%20-%20Land%20Plot%20Builders%20Construction!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>HOTEL YASH INTERNATIONAL KUSHINAGAR</h3>
+          <p><strong>City:</strong> Kushinagar (NH 27)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 95</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919076577977&text=Namaste%20Management%20%26%20Team%20HOTEL%20YASH%20INTERNATIONAL%20KUSHINAGAR!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Raj Kumar Singh Multi-speciality and Laproscopy Surgical Center</h3>
+          <p><strong>City:</strong> Jaunpur (Naiganj)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 95</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919793156600&text=Namaste%20Management%20%26%20Team%20Raj%20Kumar%20Singh%20Multi-speciality%20and%20Laproscopy%20Surgical%20Center!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Dr. Ruchika Tripathi (MD Dermatology)</h3>
+          <p><strong>City:</strong> Azamgarh, UP</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 95</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919453013934&text=Namaste%20Management%20%26%20Team%20Dr.%20Ruchika%20Tripathi%20(MD%20Dermatology)!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Dr. Rajeev Gulati's Dental Clinic</h3>
+          <p><strong>City:</strong> Gorakhpur (Bank Rd)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 94</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=918127746538&text=Namaste%20Management%20%26%20Team%20Dr.%20Rajeev%20Gulati's%20Dental%20Clinic!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>A-One Diagnostic Centre</h3>
+          <p><strong>City:</strong> Gorakhpur (Fatima By-Pass)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 94</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919389917993&text=Namaste%20Management%20%26%20Team%20A-One%20Diagnostic%20Centre!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Modern Art's Carpets & Rugs</h3>
+          <p><strong>City:</strong> Bhadohi, UP</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 94</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919839673722&text=Namaste%20Management%20%26%20Team%20Modern%20Art's%20Carpets%20%26%20Rugs!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Dermagenix | Dr Ratnakar Shukla & Dr Pooja Shukla</h3>
+          <p><strong>City:</strong> Gorakhpur, UP</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 94</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919616636000&text=Namaste%20Management%20%26%20Team%20Dermagenix%20%7C%20Dr%20Ratnakar%20Shukla%20%26%20Dr%20Pooja%20Shukla!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>J P Palace, Kushinagar</h3>
+          <p><strong>City:</strong> Kushinagar (Buddha Nagari)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 94</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919118491600&text=Namaste%20Management%20%26%20Team%20J%20P%20Palace%2C%20Kushinagar!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Dr. Lal Multispeciality Advance Dental Clinic</h3>
+          <p><strong>City:</strong> Gorakhpur (Basharatpur / Medical College Road)</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 94</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919455038019&text=Namaste%20Management%20%26%20Team%20Dr.%20Lal%20Multispeciality%20Advance%20Dental%20Clinic!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Dev Skin Care and Laser Centre (Dr. Devendra Pratap Singh)</h3>
+          <p><strong>City:</strong> Jaunpur, UP</p>
+          <p><strong>DM:</strong> Management</p>
+          <span class="badge">Score: 93</span>
+        </div>
+        <a class="btn" href="https://api.whatsapp.com/send?phone=919696151718&text=Namaste%20Management%20%26%20Team%20Dev%20Skin%20Care%20and%20Laser%20Centre%20(Dr.%20Devendra%20Pratap%20Singh)!%0A%0AMain%20Saksham%20hu.%20Ek%20choti%20si%20detail%20notice%20ki%20thi%E2%80%94aapke%20Google%20Maps%20aur%20online%20profile%20se%20jo%20local%20inquiries%20aa%20rahi%20hain%2C%20usme%20instant%20'WhatsApp%20Booking%20Funnel'%20missing%20hone%20se%20weekly%20clients%2Fpatients%20drop%20ho%20rahe%20hain.%0A%0AMaine%20specially%20aapke%20brand%20ke%20liye%20ek%2060-second%20WhatsApp%20booking%20prototype%20banaya%20hai.%20Agar%20aap%20allow%20karein%2C%20toh%20kya%20main%201-minute%20live%20demo%20link%20share%20karu%3F%20It%E2%80%99s%20completely%20free%20to%20check!" target="_blank">💬 1-Tap Pitch</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
